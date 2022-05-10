@@ -33,9 +33,63 @@
         <img src="images/logorestau.jpg" alt="Tokyo Street Logo" width="200" height="" class="center">
 
         <!--Restaurant Contact Us Form-->
+        <div style="display:grid; justify-content: center;">
+        <form action="submit.html" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br>
 
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="phone">Phone: </label>
+            <input type="text" id="phone" name="phone"><br>
+
+            <label for="inquiry">Reason for Inquirey</label>
+            <select>
+                <option value="default" selected>Catering</option>
+                <option value="privateparty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="info">Additional Information: </label>
+            <textarea id="info" name="info"></textarea>
+
+            <legend>Have you been to the restaurant?</legend><br>
+                <input type="radio" id="choice1" name="questionnaire" value="yes">
+                <label for="choice1">No</label>
+                <input type="radio" id="choice2" name="questionnaire" value="no">
+                <label for="choice2">Yes</label><br>
+
+                <legend>Best days to contact you: </legend>
+                <input type="checkbox" id="monday" name="days" value="monday">
+                <label for="monday">M</label>
+
+                <input type="checkbox" id="tuesday" name="days" value="tuesday">
+                <label fore="tuesday">T</label>
+
+                <input type="checkbox" id="wednesday" name="days" value="wednesday">
+                <label for="wednesday">W</label>
+                
+                <input type="checkbox" id="thursday" name="days" value="thursday">
+                <label for="thursday">Th</label>
+
+                <input type="checkbox" id="friday" name="days" value="friday">
+                <label for="friday">F</label><br>
+
+                <input type="submit" name="submit" value="Send Request">
+        </form>
+        </div>
+            <hr>
     <footer>
         <!--Restaurant Address and Phone Number-->
+        <div style="display:grid; justify-content: center;">
+            <a href="https://www.google.com/maps/dir//Tokyo+Street+Market,+922+Centre+St+NE,+Calgary,+AB+T2E+2P7/@51.0605283,-114.0622932,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x537165cf83f23d89:0xf41e6510e367b7a2!2m2!1d-114.0622932!2d51.0605283!3e0">922 Centre St NE, Calgary, AB T2E 2P7</a><br>
+        </div>
+        <div style="display:grid; justify-content: center;">
+            <a href="tel:(403) 452-3794">(403) 452-3794</a>
+        </div>
+        
         <hr>
     </footer>
     </body>
