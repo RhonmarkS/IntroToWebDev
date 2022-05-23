@@ -12,9 +12,9 @@
       <h2>Egypt</h2>
       
       <!-- TODO: Add srcset attribute -->
-      <img srcset="egypt_600.jpg 1x, egypt_1200.jpg 2x, egypt_1800.jpg 3x"
-            src="egypt_600.jpg"
-            alt="egypt"
+      <img  src="egypt_600.jpg" alt="egypt"
+            srcset= "egypt_1200.jpg 2x,
+                     egypt_1800.jpg 3x"
       >
 
       <p>Egpyt is a land of enduring beauty and rich culture.
@@ -24,9 +24,13 @@
       </p>
 
       <!-- TODO: Add srcset and sizes attributes -->
-      <img  srcset="luxor_600.jpg 600px, luxor_800.jpg 800px, luxor_1200.jpg 1200px"
-            src="luxor_600.jpg" alt="Luxor Temple">
-
+      <img  src="luxor_600.jpg" alt="Luxor Temple"
+            sizes="(min-width: 700px) 25vw, 
+            (min-width: 500px) 50vw, 
+            100vw"
+            srcset="luxor_600.jpg 600px, 
+            luxor_800.jpg 800px,
+            luxor_1200.jpg 1200w">
       <p>
          Packages include airfare, lodging, and several guided tours!
       </p>
