@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <!--
     Name: Rhonmark Samson
     Date Created: 2022-05-08
@@ -8,63 +9,49 @@
 
 <html lang="en">
 
-    <head>
+
+    <header class="header-title">
         <title>Restaurant Site V1</title>
-    </head>
-    <style>
-        h1 {text-align: center;}
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 20%;
-        }
-
-        p {text-align: center;}
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 20%;
-        }
-        
-    </style>
-    <body>
+        <link rel="stylesheet" href="restaurantStyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
         <h1>Tokyo Street Market</h1>
-        <hr>
+    </header>
 
-        <nav>
-            <!--Navigation bar includes HOME, MENU, CONTACTUS-->
-            <a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
-            <hr>
-        </nav>
+    <nav class="main-nav">
+        <!--Navigation bar includes HOME, MENU, CONTACTUS-->
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact Us</a>
 
-        <img src="images/logorestau.jpg" alt="Tokyo Street Logo" width="200" height="" class="center">
+    </nav>
 
+    <div class="main-content">
+    <body class="main-content">
+        <div class="responsive-img">
+        <img class="logo" src="images/logorestau.jpg" alt="Tokyo Street Logo" width="600">
+        </div>
         <!--Paragraph Restaurant Description-->
         <p>Ke Charcoal Grill brings you a whole new take on Japanese Food in Calgary. Our new concept is called 'Tokyo Street Market'. We've modelled the menu and decor based on the delicacies you would find exploring the bustling streets of Tokyo's many street markets.
 
             Tokyo Street Market has a patio overlooking the city and also serves a variety of alcoholic drinks including some Japanese beers & sake. <br> The concept we're embodying is fresh-fast food. The perfect place for a quick lunch, or to hang after work for a beer. <br> Tokyo Street Market is child-friendly and we're sure they will love some of our traditional Japanese decor.</p>
-
+    </div>       
         <!--Recent Reviews with link-->
-        <p><strong>Read a recent review!</strong></p>
-    <div style="display:grid; justify-content: center;">
+        <div class="main-review">
+        <p>Read a recent review!</p>
         <a href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TDPLy7VMN8ozYLRSNagwNTY3NDNNTrMwTjMyTrGwtDKoSDMxTDUzNTRINTYzTzJPNPISLsnPrsxXKC4pSk0tUchNLMpOLQEADLgWOg&q=tokyo+street+market&rlz=1C1CHBF_enCA977CA977&oq=tokyo+street+mark&aqs=chrome.2.69i59l2j46i39i175i199j69i57j0i512j69i60l3.5405j0j7&sourceid=chrome&ie=UTF-8#lrd=0x537165cf83f23d89:0xf41e6510e367b7a2,1,,,">Google Reviews</a>
+        </div>
+    </body>
     </div>
-        <hr>
 
-
-
+    <div class="main-footer">
     <footer>
         <!--Restaurant Address and Phone Number-->
-    <div style="display:grid; justify-content: center;">
-        <a href="https://www.google.com/maps/dir//Tokyo+Street+Market,+922+Centre+St+NE,+Calgary,+AB+T2E+2P7/@51.0605283,-114.0622932,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x537165cf83f23d89:0xf41e6510e367b7a2!2m2!1d-114.0622932!2d51.0605283!3e0">922 Centre St NE, Calgary, AB T2E 2P7</a><br>
-    </div>
-    <div style="display:grid; justify-content: center;">
+        <a href="https://www.google.com/maps/dir//Tokyo+Street+Market,+922+Centre+St+NE,+Calgary,+AB+T2E+2P7/@51.0605283,-114.0622932,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x537165cf83f23d89:0xf41e6510e367b7a2!2m2!1d-114.0622932!2d51.0605283!3e0" target="_blank">922 Centre St NE, Calgary, AB T2E 2P7</a><br>
         <a href="tel:(403) 452-3794">(403) 452-3794</a>
-    </div>
-        <hr>
     </footer>
-    </body>
+    </div>
 
 </html>

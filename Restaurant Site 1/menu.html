@@ -8,32 +8,27 @@
 
 <html lang="en">
 
-    <head>
+    <header class="header-title">
         <title>Restaurant Site V1</title>
-    </head>
-    <style>
-        h1 {text-align: center;}
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 20%;
-        }
-    </style>
-    <body>
+        <link rel="stylesheet" href="restaurantStyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
         <h1>Tokyo Street Market</h1>
-        <hr>
+    </header>
 
-        <nav>
-            <!--Navigation bar includes HOME, MENU, CONTACTUS-->
-            <a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
-            <hr>
-        </nav>
+    <nav class="main-nav">
+        <!--Navigation bar includes HOME, MENU, CONTACTUS-->
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a> 
+        <a href="contact.html">Contact Us</a>
+        
+    </nav>
 
-        <img src="images/logorestau.jpg" alt="Tokyo Street Logo" width="200" height="" class="center">
 
+    <body class="main-content">
         <!--Restaurant Menus-->
-        <div style="display:grid; justify-content: center;">
         <table>
             <tr>
                 <th>DELUXE SHOYU</th>
@@ -53,19 +48,15 @@
                 <th>RAMEN ONLY 8.00</th>
             </tr>
         </table>
-        </div>
-        <hr>
-    <footer>
-        <!--Restaurant Address and Phone Number-->
-        <div style="display:grid; justify-content: center;">
-            <a href="https://www.google.com/maps/dir//Tokyo+Street+Market,+922+Centre+St+NE,+Calgary,+AB+T2E+2P7/@51.0605283,-114.0622932,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x537165cf83f23d89:0xf41e6510e367b7a2!2m2!1d-114.0622932!2d51.0605283!3e0">922 Centre St NE, Calgary, AB T2E 2P7</a><br>
-        </div>
-        <div style="display:grid; justify-content: center;">
-            <a href="tel:(403) 452-3794">(403) 452-3794</a>
-        </div>
-        
-        <hr>
-    </footer>
+
     </body>
 
+    <div class="main-footer">
+    <footer>
+        <!--Restaurant Address and Phone Number-->
+            <a href="https://www.google.com/maps/dir//Tokyo+Street+Market,+922+Centre+St+NE,+Calgary,+AB+T2E+2P7/@51.0605283,-114.0622932,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x537165cf83f23d89:0xf41e6510e367b7a2!2m2!1d-114.0622932!2d51.0605283!3e0" target="_blank">922 Centre St NE, Calgary, AB T2E 2P7</a><br>
+            <a href="tel:(403) 452-3794">(403) 452-3794</a>
+        
+    </footer>
+    </div>
 </html>

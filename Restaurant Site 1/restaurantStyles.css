@@ -1,0 +1,86 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-size: 1em;
+}
+
+.header-title {
+    text-align: center;
+    border-bottom: 2px solid red;
+}
+
+.header-title h1 {
+    font-family: 'Koulen', cursive;
+    font-size: 4em;
+}
+
+.main-nav {
+    text-align: center;
+    margin: 5px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    margin: 5px;
+    font-size: 3em;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+.reponsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-content {
+    text-align: center;
+    padding: 2em;
+    margin: 1em;
+}
+
+.main-review {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.main-review a {
+    text-decoration: none;
+}
+
+.main-review a:hover {
+    color: rgb(202, 202, 39);
+}
+
+.main-footer {
+    text-align: center;
+    padding: 1em;
+}
+
+.main-footer a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.main-footer a:hover {
+    color: rgb(202, 202, 39);
+}
+
+.form-container {
+    align-content: left;
+    max-width: 100%;
+    font-size: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.inquiry-pointer select:hover {
+    cursor: pointer;
+}
+
+.inquiry-pointer input:hover {
+    cursor: pointer;
+}

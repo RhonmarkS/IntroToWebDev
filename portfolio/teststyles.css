@@ -20,6 +20,30 @@ h1, footer {
     color: white; 
 }
 
+.clear-float {
+    clear:both;
+}
+
+article img {
+    float:left;
+ }
+
+ .right-content {
+    float:left;
+}
+
+nav a {
+    background-color: #5b7d87;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #0d1f2d;
+    text-decoration: none;
+    display: block;
+    margin: 20px 20px;
+    width: 100%;
+    float: left;
+}
+
 /*
 Creator: Your Name
 Date created: Today's date
@@ -30,6 +54,8 @@ body {
     background-color: #fef9ff;
     font-family: arial, helvetica, sans-serif;
     color: #0d1f2d
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 h1, footer {

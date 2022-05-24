@@ -8,33 +8,36 @@
 
 <html lang="en">
 
-    <head>
+    <header class="header-title">
         <title>Restaurant Site V1</title>
-    </head>
-    <style>
-        h1 {text-align: center;}
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 20%;
-        }
-    </style>
-    <body>
+        <link rel="stylesheet" href="restaurantStyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
         <h1>Tokyo Street Market</h1>
-        <hr>
+    </header>
 
-        <nav>
-            <!--Navigation bar includes HOME, MENU, CONTACTUS-->
-            <a href="index.html">Home</a> <a href="menu.html">Menu</a> <a href="contact.html">Contact Us</a>
-            <hr>
-        </nav>
+    <style>
+        .main-form {
+            text-align: center;
+        }
 
-        <img src="images/logorestau.jpg" alt="Tokyo Street Logo" width="200" height="" class="center">
+    </style>
 
+    <nav class="main-nav">
+        <!--Navigation bar includes HOME, MENU, CONTACTUS-->
+        <a href="index.html">Home</a>
+
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact Us</a>
+        
+    </nav>
+
+    <body> 
         <!--Restaurant Contact Us Form-->
-        <div style="display:grid; justify-content: center;">
-        <form action="submit.html" method="POST">
+    <div class="form-container">
+    <form class="main-form" action="submit.html" method="POST">
             <label for="name">Name: </label>
             <input type="text" id="name" name="name"><br>
 
@@ -44,22 +47,26 @@
             <label for="phone">Phone: </label>
             <input type="text" id="phone" name="phone"><br>
 
-            <label for="inquiry">Reason for Inquirey</label>
+            <div class="inquiry-pointer">
+            <label for="inquiry">Reason for Inquiry</label>
             <select>
                 <option value="default" selected>Catering</option>
                 <option value="privateparty">Private Party</option>
                 <option value="feedback">Feedback</option>
                 <option value="other">Other</option>
             </select><br>
-
+            </div>
             <label for="info">Additional Information: </label>
             <textarea id="info" name="info"></textarea>
 
+            <div class="inquiry-pointer">
             <legend>Have you been to the restaurant?</legend><br>
+                <div class="inquiry-pointer">
                 <input type="radio" id="choice1" name="questionnaire" value="yes">
                 <label for="choice1">No</label>
                 <input type="radio" id="choice2" name="questionnaire" value="no">
                 <label for="choice2">Yes</label><br>
+            
 
                 <legend>Best days to contact you: </legend>
                 <input type="checkbox" id="monday" name="days" value="monday">
@@ -78,20 +85,19 @@
                 <label for="friday">F</label><br>
 
                 <input type="submit" name="submit" value="Send Request">
-        </form>
-        </div>
-            <hr>
+            </div>
+    </form>
+    </div>
+
+    </body> 
+    </div>
+
+    <div class="main-footer">
     <footer>
         <!--Restaurant Address and Phone Number-->
-        <div style="display:grid; justify-content: center;">
-            <a href="https://www.google.com/maps/dir//Tokyo+Street+Market,+922+Centre+St+NE,+Calgary,+AB+T2E+2P7/@51.0605283,-114.0622932,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x537165cf83f23d89:0xf41e6510e367b7a2!2m2!1d-114.0622932!2d51.0605283!3e0">922 Centre St NE, Calgary, AB T2E 2P7</a><br>
-        </div>
-        <div style="display:grid; justify-content: center;">
+            <a href="https://www.google.com/maps/dir//Tokyo+Street+Market,+922+Centre+St+NE,+Calgary,+AB+T2E+2P7/@51.0605283,-114.0622932,15z/data=!4m9!4m8!1m0!1m5!1m1!1s0x537165cf83f23d89:0xf41e6510e367b7a2!2m2!1d-114.0622932!2d51.0605283!3e0" target="_blank">922 Centre St NE, Calgary, AB T2E 2P7</a><br>
             <a href="tel:(403) 452-3794">(403) 452-3794</a>
-        </div>
         
-        <hr>
     </footer>
-    </body>
-
+    </div>
 </html>
